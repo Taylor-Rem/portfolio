@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #111;
+}
+main {
+  position: relative;
+}
+#tiles {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+}
+h1 {
+  color: white;
+  font-size: 7rem;
+}
+a,
+a:visited {
+  pointer-events: all;
+  color: white;
+  font-style: italic;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+.about-con {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.about-section {
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 1s;
+}
+.img {
+  width: 30rem;
+}
+.about-para {
+  font-size: 3rem;
+  color: white;
+}
+.one {
+  display: flex;
+  align-items: center;
+  grid-column: 4 / span 9;
+  grid-row: 3 / span 3;
+}
+.two {
+  display: flex;
+  align-items: center;
+  grid-column: 4 / span 9;
+  grid-row: 3 / span 3;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 3 / span 9;
+  grid-row: 3 / span 3;
+}
+.four {
+  display: flex;
+  grid-column: 3 / span 9;
+  grid-row: 2 / span 3;
+}
+.five {
+  grid-column: 3 / span 9;
+  grid-row: 2 / span 3;
+}
+.main-one {
+  margin-right: 15rem;
+}
+.para-one {
+  text-align: center;
+  margin-top: 1rem;
+}
+.secondary-two {
+  margin-top: 7rem;
+  margin-left: 10rem;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.para-two {
+  font-size: 2rem;
+  width: 30rem;
+}
+.cat-piano {
+  margin-top: 3rem;
+  width: 40rem;
+  border-radius: 15px;
+}
+.para-three {
+  font-size: 3rem;
+}
+.about-heading {
+  text-align: center;
+  font-size: 5rem;
+}
+.stars {
+  width: 30rem;
+}
+.main-five {
+  position: absolute;
+  top: 2rem;
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.stars-para {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.about-para {
+  font-size: 3rem;
+}
+/* MEDIA WIDTH */
+@media (max-width: 1600px) {
+  .one {
+    grid-column: 4;
+  }
+}
+@media (max-width: 1100px) {
+  .secondary-two {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+  }
+}
+@media (max-width: 800px) {
+  .about-para {
+    font-size: 2rem;
+  }
+  .secondary-two {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+  .snail-wave {
+    width: 5rem;
+  }
+}
+@media (max-width: 700px) {
+  .secondary-two {
+    margin-left: 0;
+  }
+  .snail-wave {
+    width: 15rem;
+    margin-top: 2rem;
+  }
+  .about-heading {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .main-one {
+    margin-right: 5rem;
+  }
+  .taylor-img {
+    margin-top: 5rem;
+  }
+}
+@media (max-width: 800px) {
+  .main-five {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .one {
+    flex-direction: column;
+  }
+  .two {
+    grid-row: 1 / span 3;
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .one {
+    grid-row: 1 / span 3;
+    grid-column: 5 / span 3;
+  }
+  .cat-piano {
+    width: 25rem;
+  }
+  .stars {
+    width: 20rem;
+  }
+}
+/* MEDIA HEIGHT */
+@media (max-height: 700px) {
+  .taylor-img {
+    width: 20rem;
+  }
+  .two {
+    grid-column: 4 / span 4;
+  }
+  .about-para {
+    font-size: 2rem;
+  }
+  .snail-wave {
+    width: 15rem;
+  }
+  .main-five {
+    gap: 2rem;
+  }
+  .stars {
+    width: 15rem;
+  }
+}
+@media (max-height: 600px) {
+  .secondary-two {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 3rem;
+  }
+}
+@media (max-height: 500px) {
+  .two {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+  }
+}
+@media (max-height: 400px) {
+  .secondary-two {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .taylor-img {
+    width: 10rem;
+  }
+  .about-para {
+    font-size: 1rem;
+  }
+  .about-heading {
+    font-size: 3rem;
+  }
+  .one {
+    grid-column: 5 / span 3;
+    grid-row: 2 / span 3;
+  }
+  .snail-wave {
+    width: 10rem;
+  }
+  .two {
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 3;
+  }
+  .secondary-two {
+    margin-top: 0;
+    gap: 1rem;
+    margin-left: 3rem;
+  }
+}

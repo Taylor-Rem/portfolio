@@ -1,0 +1,136 @@
+main {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/background1.jpg");
+  background-size: cover;
+}
+.portfolio-title {
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 10rem;
+}
+.port-white-space {
+  background-color: rgba(221, 221, 221, 0.942);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-top: 10rem;
+  height: 130rem;
+  width: 80%;
+}
+.port-entries {
+  height: 100vh;
+  display: grid;
+  width: 100%;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10rem 5rem 10rem 5rem;
+}
+.portfolio-entry {
+  margin: 0 auto;
+  transition: rotate 0.3s;
+}
+.portfolio-entry:nth-child(even):hover {
+  rotate: 5deg;
+}
+.portfolio-entry:nth-child(odd):hover {
+  rotate: -5deg;
+}
+.port-thumbnail {
+  width: 30rem;
+  transition: width 0.3s;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+}
+.port-thumbnail:hover {
+  width: 35rem;
+}
+.title {
+  font-size: 4rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 900px) {
+  .port-thumbnail {
+    width: 20rem;
+  }
+  .port-thumbnail:hover {
+    width: 25rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 700px) {
+  .portfolio-title {
+    font-size: 8rem;
+  }
+  .port-thumbnail {
+    width: 15rem;
+  }
+  .port-thumbnail:hover {
+    width: 20rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .port-entries {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5rem 2rem 5rem 2rem;
+  }
+  .portfolio-title {
+    font-size: 8rem;
+  }
+  .port-thumbnail {
+    width: 25rem;
+  }
+  .port-thumbnail:hover {
+    width: 30rem;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .port-white-space {
+    height: 170rem;
+  }
+}
+@media (max-width: 450px) {
+  .portfolio-title {
+    font-size: 5rem;
+  }
+  .port-thumbnail {
+    width: 20rem;
+  }
+  .port-thumbnail:hover {
+    width: 25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .port-white-space {
+    height: 150rem;
+  }
+}
+@media (max-width: 350px) {
+  .portfolio-title {
+    font-size: 3rem;
+  }
+  .port-thumbnail {
+    width: 15rem;
+  }
+  .port-thumbnail:hover {
+    width: 20rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .port-white-space {
+    height: 130rem;
+  }
+}

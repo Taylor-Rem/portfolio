@@ -1,0 +1,233 @@
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+main {
+  position: relative;
+  padding-top: 10rem;
+  top: 64rem;
+  background-image: url("/img/webb-dark.png");
+  padding-bottom: 10rem;
+}
+.taylor-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mm-con {
+  margin: 0 auto;
+  width: 75%;
+  height: 50rem;
+  max-width: 70rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding-bottom: 3rem;
+  background-color: #fff;
+  position: relative;
+  z-index: 50;
+}
+.mm {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 5rem;
+  font-style: italic;
+}
+button {
+  background-color: white;
+  border-radius: 5px;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: 600;
+  font-size: 3rem;
+}
+button:hover {
+  background-color: #d25858;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+button:active {
+  background-color: black;
+  color: white;
+}
+.buttons {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  display: flex;
+  margin: 0 auto;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.instrument-con {
+  display: grid;
+  row-gap: 3rem;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(2, 1fr);
+}
+.instrument-text {
+  font-size: 3rem;
+}
+.instrument {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.checkbox-con {
+  display: flex;
+  width: 75%;
+  justify-content: space-evenly;
+}
+.unmute {
+  appearance: none;
+  -webkit-appearance: none;
+  border: solid 2px black;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 35px;
+  height: 35px;
+  transition: background-color 0.3s;
+}
+.unmute:hover {
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.unmute:checked {
+  background-color: #710000;
+  transition: background-color 0.3s;
+}
+.unmute:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 30px;
+  content: "\f00c";
+  color: white;
+}
+.slider {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background-color: #d25858;
+  border: solid 2px black;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: solid 1px black;
+  border-radius: 50%;
+  background-color: black;
+}
+.slider::-webkit-slider-thumb:hover {
+  background-color: white;
+  border: solid 1px black;
+  transition: background-color 0.2s;
+}
+.slider:hover {
+  cursor: pointer;
+  background-color: #710000;
+}
+.musmac {
+  display: inline-block;
+}
+.musmac:nth-child(6) {
+  margin-left: 10px;
+}
+.scroll-con {
+  position: relative;
+}
+.bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.moon {
+  transform: translateY(20rem);
+}
+.website-welcome {
+  position: absolute;
+  color: white;
+  font-size: 20rem;
+  transform: translateY(80rem);
+}
+.welcome-text {
+  color: white;
+  font-size: 10rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.welcome-para {
+  color: white;
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  padding: 0 5rem 0 5rem;
+}
+@media (max-width: 1480px) {
+  .website-welcome {
+    font-size: 15rem;
+  }
+}
+@media (max-width: 1000px) {
+  .website-welcome {
+    font-size: 10rem;
+  }
+  .welcome-text {
+    font-size: 5rem;
+  }
+  .welcome-para {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .website-welcome {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 450px) {
+  .website-welcome {
+    font-size: 5rem;
+  }
+  .mm {
+    font-size: 4rem;
+  }
+  .unmute {
+    width: 2rem;
+    height: 2rem;
+  }
+  .unmute:after {
+    font-size: 15px;
+  }
+  .mm-con {
+    width: 95%;
+  }
+}
+@media (max-height: 600px) {
+  .mtn {
+    transform: translateY(20rem);
+  }
+  .space {
+    transform: translateY(10rem);
+  }
+}
+@media (max-height: 400px) {
+  .mtn {
+    transform: translateY(30rem);
+  }
+  .space {
+    transform: translateY(10rem);
+  }
+  .moon {
+    transform: translateY(30rem);
+  }
+}

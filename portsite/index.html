@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="/img/trLogo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Taylor Remund Portfolio</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/general.css" />
+    <script defer src="script.js"></script>
+    <script defer src="general.js"></script>
+  </head>
+  <body>
+    <div class="sticky-nav">
+      <div class="nav-bar">
+        <a href="index.html">
+          <img src="img/trLogo.png" alt="Taylor Remund Logo" class="tr-logo" />
+        </a>
+        <div class="menu-icon">
+          <i class="icon fa-solid fa-bars"></i>
+          <i class="icon hidden fa-solid fa-x"></i>
+        </div>
+        <div class="nav-links">
+          <a href="about.html" class="nav-text">about</a>
+          <a href="port.html" class="nav-text">portfolio</a>
+          <a href="contact.html" class="nav-text">contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-con">
+      <img
+        class="bg-img space"
+        src="/img/background/space.png"
+        alt="picture of stars"
+      />
+      <img
+        class="bg-img moon"
+        src="/img/background/moon.png"
+        alt="picture of moon"
+      />
+      <img
+        class="bg-img mtn"
+        src="/img/background/mountain.png"
+        alt="picture of mountain"
+      />
+      <div class="taylor-con">
+        <h1 class="website-welcome">Taylor Remund</h1>
+      </div>
+      <img
+        class="bg-img trees"
+        src="/img/background/trees.png"
+        alt="picture of trees"
+      />
+    </div>
+    <main>
+      <div class="welcome">
+        <h1 class="welcome-text">Welcome to my website!</h1>
+        <p class="welcome-para">
+          Take a look around! Or just play with the music machine, I don't blame
+          you
+        </p>
+      </div>
+      <div class="mm-con">
+        <h1 class="mm">
+          <span class="musmac">M</span><span class="musmac">U</span
+          ><span class="musmac">S</span><span class="musmac">I</span
+          ><span class="musmac">C</span><span class="musmac"> </span
+          ><span class="musmac">M</span><span class="musmac">A</span
+          ><span class="musmac">C</span><span class="musmac">H</span
+          ><span class="musmac">I</span><span class="musmac">N</span
+          ><span class="musmac">E</span>
+        </h1>
+        <div class="buttons">
+          <button class="button"><i class="fa-solid fa-play"></i></button>
+          <button class="button"><i class="fa-solid fa-stop"></i></button>
+        </div>
+        <div class="instrument-con">
+          <div class="instrument drums">
+            <h1 class="instrument-text">DRUMS</h1>
+            <div class="checkbox-con">
+              <input class="unmute" type="checkbox" />
+              <input class="unmute" type="checkbox" />
+              <input class="unmute" type="checkbox" />
+            </div>
+            <div class="slider-con">
+              <input
+                type="range"
+                min="0"
+                max="1"
+                value=".3"
+                class="slider"
+                step=".01"
+              />
+            </div>
+          </div>
+          <div class="instrument bass">
+            <h1 class="instrument-text">BASS</h1>
+            <div class="checkbox-con">
+              <input class="unmute" type="checkbox" />
+              <input class="unmute" type="checkbox" />
+              <input class="unmute" type="checkbox" />
+            </div>
+            <div class="slider-con">
+              <input
+                type="range"
+                min="0"
+                max="1"
+                value=".3"
+                class="slider"
+                step=".01"
+              />
+            </div>
+          </div>
+          <div class="instrument piano">
+            <h1 class="instrument-text">PIANO</h1>
+            <div class="checkbox-con">
+              <input class="unmute" type="checkbox" />
+              <input class="unmute" type="checkbox" />
+              <input class="unmute" type="checkbox" />
+            </div>
+            <div class="slider-con">
+              <input
+                type="range"
+                min="0"
+                max="1"
+                value=".3"
+                class="slider"
+                step=".01"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
